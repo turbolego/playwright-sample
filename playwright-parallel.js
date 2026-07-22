@@ -99,9 +99,9 @@ const capabilities = [
     'browserName': 'MicrosoftEdge',
     'browserVersion': 'latest',
     'LT:Options': {
-      'platform': 'MacOS Ventura',
+      'platform': 'macOS Ventura',
       'build': 'Playwright With Parallel Build',
-      'name': 'Playwright Sample Test on Windows 8 - MicrosoftEdge',
+      'name': 'Playwright Sample Test on macOS Ventura - MicrosoftEdge',
       'user': process.env.LT_USERNAME,
       'accessKey': process.env.LT_ACCESS_KEY,
       'network': true,
@@ -114,9 +114,9 @@ const capabilities = [
     'browserName': 'Chrome',
     'browserVersion': 'latest',
     'LT:Options': {
-      'platform': 'MacOS Big sur',
+      'platform': 'macOS Sonoma',
       'build': 'Playwright With Parallel Build',
-      'name': 'Playwright Sample Test on MacOS Big sur - Chrome',
+      'name': 'Playwright Sample Test on macOS Sonoma - Chrome',
       'user': process.env.LT_USERNAME,
       'accessKey': process.env.LT_ACCESS_KEY,
       'network': true,
