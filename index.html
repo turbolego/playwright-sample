@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playwright Test Results - experis.no</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      padding: 2rem;
+    }
+    h1 { text-align: center; margin-bottom: 0.5rem; color: #e94560; }
+    .subtitle { text-align: center; color: #888; margin-bottom: 2rem; }
+    .status-bar {
+      background: #16213e;
+      border-radius: 8px;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .status-item { text-align: center; }
+    .status-item .count { font-size: 2rem; font-weight: bold; color: #0f0; }
+    .status-item .label { font-size: 0.85rem; color: #888; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #16213e;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(233, 69, 96, 0.3);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #0f3460;
+    }
+    .card-body { padding: 1rem; }
+    .card-title { font-weight: 600; margin-bottom: 0.25rem; }
+    .card-url { font-size: 0.8rem; color: #888; word-break: break-all; }
+    .card-badge {
+      display: inline-block;
+      background: #0f3460;
+      color: #0f0;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .footer { text-align: center; margin-top: 2rem; color: #555; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <h1>🧪 Playwright Test Results</h1>
+  <p class="subtitle">experis.no Navigation Test — LambdaTest Cloud</p>
+
+  <div class="status-bar">
+    <div class="status-item">
+      <div class="count">8</div>
+      <div class="label">Pages Tested</div>
+    </div>
+    <div class="status-item">
+      <div class="count" style="color:#0f0">8</div>
+      <div class="label">Passed</div>
+    </div>
+    <div class="status-item">
+      <div class="count" style="color:#e94560">0</div>
+      <div class="label">Failed</div>
+    </div>
+    <div class="status-item">
+      <div class="count">Chrome/Win10</div>
+      <div class="label">Browser</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="experis-landing.png" alt="Landing page">
+      <div class="card-body">
+        <div class="card-title">Landing Page</div>
+        <div class="card-url">https://www.experis.no</div>
+        <span class="card-badge">✓ Passed</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="experis-services.png" alt="Services page">
+      <div class="card-body">
+        <div class="card-title">Våre Tjenester</div>
+        <div class="card-url">/nb/våre-tjenester</div>
+        <span class="card-badge">✓ Passed</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="experis-industries.png" alt="Industries page">
+      <div class="card-body">
+        <div class="card-title">Bransjer</div>
+        <div class="card-url">/nb/bransjer</div>
+        <span class="card-badge">✓ Passed</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="experis-partner.png" alt="Partner page">
+      <div class="card-body">
+        <div class="card-title">Partner</div>
+        <div class="card-url">/nb/partner</div>
+        <span class="card-badge">✓ Passed</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="experis-news.png" alt="News page">
+      <div class="card-body">
+        <div class="card-title">Aktuelt</div>
+        <div class="card-url">/nb/aktuelt</div>
+        <span class="card-badge">✓ Passed</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="experis-careers.png" alt="Careers page">
+      <div class="card-body">
+        <div class="card-title">Bli en av oss</div>
+        <div class="card-url">/nb/bli-en-av-oss</div>
+        <span class="card-badge">✓ Passed</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="experis-about.png" alt="About page">
+      <div class="card-body">
+        <div class="card-title">Om oss</div>
+        <div class="card-url">/nb/om-oss</div>
+        <span class="card-badge">✓ Passed</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="experis-jobs.png" alt="Jobs page">
+      <div class="card-body">
+        <div class="card-title">Stillinger</div>
+        <div class="card-url">/nb/stillinger</div>
+        <span class="card-badge">✓ Passed</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="experis-contact.png" alt="Contact page">
+      <div class="card-body">
+        <div class="card-title">Kontakt Oss</div>
+        <div class="card-url">/nb/om-oss/kontakt-oss</div>
+        <span class="card-badge">✓ Passed</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">
+    Powered by <a href="https://playwright.dev" style="color:#e94560">Playwright</a> · 
+    Run on <a href="https://www.lambdatest.com" style="color:#e94560">LambdaTest</a> · 
+    Workflow: <code>.github/workflows/test.yml</code>
+  </p>
+</body>
+</html>
